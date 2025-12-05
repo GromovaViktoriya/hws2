@@ -5,38 +5,47 @@
 }
 
 .textarea {
-    text-align: center;
-    all: unset;
+    display: block;
     resize: none;
     outline: none;
-    font: inherit;
 
     width: 976px;
-    padding: 5px;
+    height: 40px;
+    padding: 12px 16px;
 
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    line-height: 1;
+
     color: rgba(0, 0, 0, 0.6);
 
-    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
+    box-shadow: 0 1px 2px rgba(29, 33, 38, 0.1),
+    0 5px 20px rgba(29, 33, 38, 0.03);
     background: #f5f7fb;
     border-radius: 20px;
+    border: none;
 
     opacity: 0.9;
 }
 
 .button {
+    all: unset;
+    text-align: center;
+    cursor: pointer;
     border-radius: 20px;
     width: 120px;
     height: 40px;
     background: #06c;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
 }
 
 .button:hover {
-
+    background: #034c98;
 }
 
 .button:active {
-
+    background: #0777e3;
 }

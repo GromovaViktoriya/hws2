@@ -18,6 +18,7 @@
 }
 
 .friendText {
+    position: relative;
     padding: 8px 13px;
     border-radius: 10px;
     background: #f5f7fb;
@@ -25,7 +26,15 @@
 }
 
 .friendText:after {
-
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #f5f7fb;
+    border-top: 0;
 }
 
 .friendName {
