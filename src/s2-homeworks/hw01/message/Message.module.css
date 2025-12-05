@@ -1,17 +1,30 @@
 .message {
-
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .imageAndText {
-
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    margin-left: 12px;
 }
 
 .text {
-
+    max-width: 600px;
+    min-height: 60px;
+    text-align: right;
+    padding: 8px 13px;
+    border-radius: 10px;
+    background: #06c;
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
 }
 
 .text:after {
@@ -19,13 +32,20 @@
 }
 
 .name {
-
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
 }
 
 .messageText {
-
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
 }
 
 .time {
-
+    font-weight: 600;
+    font-size: 10px;
+    color: #000;
+    transform: translateX(-55%)
 }
