@@ -15,6 +15,7 @@
     width: 48px;
     height: 48px;
     margin-left: 12px;
+    border-radius: 50%;
 }
 
 .text {
@@ -23,7 +24,7 @@
     min-height: 60px;
     text-align: right;
     padding: 8px 13px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 10px;
     background: #06c;
     box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
 }
@@ -31,13 +32,12 @@
 .text:after {
     content: '';
     position: absolute;
+    width: 15px;
+    height: 15px;
     bottom: 0;
-    right: -10px;
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: #06c;
-    border-top: 0;
+    right: -15px;
+    background: radial-gradient(circle at right bottom, rgba(0, 0, 0, 0) 15px, rgba(0, 102, 204, 100) 0);
+    transform: rotate(-90deg);
 }
 
 .name {

@@ -20,7 +20,7 @@
 .friendText {
     position: relative;
     padding: 8px 13px;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 0;
     background: #f5f7fb;
     box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
 }
@@ -29,12 +29,12 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: -10px;
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: #f5f7fb;
-    border-top: 0;
+    left: -15px;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at left bottom, rgba(0, 0, 0, 0) 15px, rgba(245, 247, 251, 100) 0);
+    transform: rotate(90deg);
+
 }
 
 .friendName {
