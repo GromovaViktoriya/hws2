@@ -2,7 +2,7 @@ import React from 'react'
 import {pureAddUserCallback, UserType} from '../HW3'
 
 let initialState: UserType[]
-const setName:  React.Dispatch<React.SetStateAction<UserType[]>> = (a) =>{
+const setName: React.Dispatch<React.SetStateAction<UserType[]>> = (a) => {
     if (typeof a === "function") {
         initialState = a(initialState)
     } else {
