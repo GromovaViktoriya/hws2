@@ -44,6 +44,7 @@ outline: none;
 }
 
 .button {
+    border: none;
     border-radius: 3px;
     width: 78px;
     height: 36px;
