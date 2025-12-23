@@ -19,8 +19,7 @@ type SuperInputTextPropsType = Omit<DefaultInputPropsType, 'type'> & {
     onEnter?: () => void
     error?: ReactNode
     spanClassName?: string
-    id: string
-    value:string
+    id?: string
     onChange?:(e:ChangeEvent<HTMLInputElement>)=>void
     className?:string
 }
