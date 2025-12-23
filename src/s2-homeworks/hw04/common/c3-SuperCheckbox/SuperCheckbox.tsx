@@ -37,17 +37,17 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
             onChange(e)
         }
         if (onChangeChecked) {
-            e.currentTarget.checked
+            onChangeChecked(e.currentTarget.checked)
         }
 
 
         // задачка на написание онченджа
         // ЕСЛИ(onChangeChecked ВООБЩЕ СУЩЕСТВУЕТ){
         //    ПЕРЕДАТЬ ЕМУ ИВЕНТ.ЧТО-ТО.ЧТО-ТО
-        //}
+        //
         // ЕСЛИ(onChange ВООБЩЕ СУЩЕСТВУЕТ){
         //    ПЕРЕДАТЬ ЕМУ ИВЕНТ
-        //}
+        //
     }
 
     const finalInputClassName = s.checkbox
