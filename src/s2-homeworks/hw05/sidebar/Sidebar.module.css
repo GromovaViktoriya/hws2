@@ -56,6 +56,10 @@
     color: #0080ff;
 }
 
+.nav a:focus {
+    color: #3d6b99;
+}
+
 .nav a.active {
     color: #0059b2;
     text-decoration: underline;
