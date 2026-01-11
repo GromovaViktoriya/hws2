@@ -1,8 +1,5 @@
 .App {
-
     margin: 0 auto;
-
-
 }
 
 #hw1 {
@@ -28,6 +25,12 @@
 
 #hw4{
     margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 70px;
+}
+
+#hw6{
+    margin: 71px auto ;
     max-width: 1280px;
     padding: 0 70px;
 }
