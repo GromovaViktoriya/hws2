@@ -27,12 +27,16 @@
 
 .thead {
     font-family: "Roboto", sans-serif;
-    padding: 8px 17px;
+    padding: 8px 290px 8px 17px;
     background-color: #e5e5e5;
     font-weight: 600;
     font-size: 14px;
     color: #000;
 
+}
+.thead tr {
+    display: flex;
+    justify-content: space-between;
 }
 
 tbody {
