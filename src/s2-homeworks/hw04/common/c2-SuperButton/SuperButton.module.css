@@ -54,19 +54,19 @@
 }
 
 .button:disabled {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .disabled {
-    background: #004d99;
-    color: #002e5c;
+    background: #06c;
+    color: #fff;
 }
 
 .disabled:hover {
     background: #004d99;
-    color: #002e5c;
+    color: #fff;
 }
 .disabled:active {
     background: #004d99;
-    color: #002e5c;
+    color: #fff;
 }
