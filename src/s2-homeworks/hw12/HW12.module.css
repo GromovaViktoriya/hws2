@@ -13,11 +13,68 @@
     --background: #212A34;
 }
 
-html {
-    background-color: var(--background);
-    color: var(--color);
+[data-theme='3'] .select {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 15.5C11.8684 15.5008 11.7379 15.4756 11.6161 15.4258C11.4943 15.376 11.3834 15.3027 11.29 15.21L7.29 11.21C7.098 11.018 6.99 10.758 6.99 10.5C6.99 10.242 7.098 9.982 7.29 9.79C7.482 9.598 7.742 9.49 8 9.49C8.258 9.49 8.518 9.598 8.71 9.79L12 13.1L15.3 9.92C15.485 9.742 15.735 9.642 15.996 9.642C16.257 9.642 16.507 9.742 16.692 9.92C16.877 10.098 16.977 10.334 16.977 10.582C16.977 10.83 16.877 11.066 16.692 11.244L12.692 15.224C12.5091 15.4004 12.266 15.5005 12.012 15.504L12 15.5Z' fill='white'/%3E%3C/svg%3E");
 }
 
 .select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 
+    padding: 7px 20px 7px 10px;
+    width: 171px;
+    height: 36px;
+    border: 2px solid #323232;
+    border-radius: 2px;
+    background-color: transparent;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 15.5C11.8684 15.5008 11.7379 15.4756 11.6161 15.4258C11.4943 15.376 11.3834 15.3027 11.29 15.21L7.29 11.21C7.098 11.018 6.99 10.758 6.99 10.5C6.99 10.242 7.098 9.982 7.29 9.79C7.482 9.598 7.742 9.49 8 9.49C8.258 9.49 8.518 9.598 8.71 9.79L12 13.1L15.3 9.92C15.485 9.742 15.735 9.642 15.996 9.642C16.257 9.642 16.507 9.742 16.692 9.92C16.877 10.098 16.977 10.334 16.977 10.582C16.977 10.83 16.877 11.066 16.692 11.244L12.692 15.224C12.5091 15.4004 12.266 15.5005 12.012 15.504L12 15.5Z' fill='black'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 24px;
+
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.select:focus,
+.select:active {
+    outline: none;
+    border: 2px solid #323232;
+    border-radius: 2px;
+    padding: 7px 20px 7px 10px; /* Убедись, что отступы идентичны */
+    background-color: transparent;
+}
+
+[data-theme='3'] .select:focus,
+[data-theme='3'] .select:active {
+    border-color: #FFFFFF;
+}
+
+[data-theme='2'] option {
+    background-color: #DDEEFF;
+}
+
+[data-theme='3'] option {
+    background-color: #212A34;
+}
+
+:global(.hw) {
+    background-color: var(--background) !important;
+    color: var(--color) !important;
+    transition: all 0.3s ease;
+}
+
+:global(.hwTitle) {
+    color: var(--color) !important;
+}
+
+/* Красим весь фон страницы */
+:global(html), :global(body) {
+    background-color: var(--background);
+    color: var(--color);
+    transition: background-color 0.3s ease;
 }
