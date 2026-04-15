@@ -22,6 +22,8 @@
 }
 
 .textContainer{
+    display: flex;
+    flex-direction: column;
     width: 510px;
     text-align: left;
 }
