@@ -34,21 +34,23 @@ const HW14 = () => {
         setLoading(true)
         getTechs(value)
             .then((res) => {
+                if (res) {
+                    // setLoading(false)
+                    setTechs(res.data.techs)
+                }
                 // делает студент
-
                 // сохранить пришедшие данные
-
                 //
             })
     }
 
     const onChangeText = (value: string) => {
+        sendQuery(value || '')
         setFind(value)
+        setSearchParams(value ? {find: value} : {})
         // делает студент
-
         // добавить/заменить значение в квери урла
         // setSearchParams(
-
         //
     }
 
@@ -59,13 +61,13 @@ const HW14 = () => {
     }, [])
 
     const mappedTechs = techs.map(t => (
-        <div key={t} id={'hw14-tech-' + t} className={s.tech}>
+        <p key={t} id={'hw14-tech-' + t} className={s.tech}>
             {t}
-        </div>
+        </p>
     ))
 
     return (
-        <div id={'hw14'}>
+        <div id={s2.hw14}>
             <div className={s2.hwTitle}>Homework #14</div>
 
             <div className={s2.hw}>
@@ -75,12 +77,14 @@ const HW14 = () => {
                     onChangeText={onChangeText}
                     onDebouncedChange={sendQuery}
                 />
-
-                <div id={'hw14-loading'} className={s.loading}>
-                    {isLoading ? '...ищем' : <br/>}
+                <div className={s.wrapper}>
+                    <div>
+                        {mappedTechs}
+                    </div>
+                    <div id={'hw14-loading'} className={s.loading}>
+                        {isLoading ? '...ищем' : <br/>}
+                    </div>
                 </div>
-
-                {mappedTechs}
             </div>
         </div>
     )

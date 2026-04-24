@@ -1,7 +1,31 @@
+.wrapper {
+    margin-top: 19px;
+    display: flex;
+    gap: 250px;
+}
+
 .tech {
+    width: 75px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
 
 }
 
 .loading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #4d4d4d;
+}
 
+input{
+    cursor: pointer;
+}
+input:focus {
+    outline: none;
+    border: 1.5px solid #06c;
+    border-radius: 2px;
 }
